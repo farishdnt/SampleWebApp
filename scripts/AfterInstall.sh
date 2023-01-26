@@ -1,12 +1,12 @@
 #!/bin/bash
 
-PARAMATER="laravel-test"
-REGION="us-west-2"
+# PARAMATER="laravel-test"
+REGION="us-east-1"
 WEB_DIR="/var/www/html"
 # WEB_USER="www-data"
 
 # Get parameters and put it into .env file inside application root
-aws ssm get-parameter --with-decryption --name $PARAMATER --region $REGION --query Parameter.Value | sed -e 's/^"//' -e 's/"$//' -e 's/\\n/\n/g' -e 's/\\//g' > $WEB_DIR/.env
+# aws ssm get-parameter --with-decryption --name $PARAMATER --region $REGION --query Parameter.Value | sed -e 's/^"//' -e 's/"$//' -e 's/\\n/\n/g' -e 's/\\//g' > $WEB_DIR/.env
 
 
 # Set permissions to storage and bootstrap cache
