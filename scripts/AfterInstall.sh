@@ -16,9 +16,9 @@ sudo chmod -R 777 /var/www/html/storage
 sudo chmod -R 777 /var/www/html/bootstrap
 #
 
-php artisan key:generate
-php artisan config:clear
-php artisan cache:clear
+# php artisan key:generate
+# php artisan config:clear
+# php artisan cache:clear
 #php artisan optimize
 #chown -R www-data:www-data .
 #php artisan config:clear
